@@ -1,0 +1,14 @@
+{
+  "name": "RACES16 - 十六校の競技の進行状況を確認しよう！",
+  "short_name": "RACES16",
+  "icons": [
+    {
+      "src": "./favicon.ico.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#18B5DF"
+}
