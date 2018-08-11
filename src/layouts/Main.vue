@@ -4,8 +4,8 @@
     <div class="container">
       <ul>
         <li>
-          <VLink href="/">Home</VLink>
-          <VLink href="/about">About</VLink>
+          <router-link to="/">Home</router-link>
+          <router-link to="/about">About</router-link>
         </li>
       </ul>
       <slot></slot>
@@ -14,12 +14,10 @@
 </template>
 
 <script>
-import VLink from "../components/VLink.vue";
 import VHeader from "../components/VHeader.vue";
 
 export default {
   components: {
-    VLink,
     VHeader
   }
 };
