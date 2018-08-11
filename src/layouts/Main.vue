@@ -1,32 +1,34 @@
 <template>
-  <div class="container">
-    <h1>moriyuu's first vue!</h1>
-    <ul>
-      <li>
-        <v-link href="/">Home</v-link>
-        <v-link href="/about">About</v-link>
-      </li>
-    </ul>
-
-    <slot></slot>
+  <div class="wrapper">
+    <VHeader />
+    <div class="container">
+      <ul>
+        <li>
+          <VLink href="/">Home</VLink>
+          <VLink href="/about">About</VLink>
+        </li>
+      </ul>
+      <slot></slot>
+    </div>
   </div>
 </template>
 
 <script>
 import VLink from "../components/VLink.vue";
+import VHeader from "../components/VHeader.vue";
 
 export default {
   components: {
-    VLink
+    VLink,
+    VHeader
   }
 };
 </script>
 
 <style scoped>
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 15px 30px;
-  background: #f9f7f5;
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+.wrapper {
+  font-family: "Avenir", "Noto Sans Japanese", sans-serif;
 }
 </style>
