@@ -1,5 +1,5 @@
 <template>
-    <li>
+    <li @click="showRace">
         <slot>{{title}}</slot>
         <img :src="arrowRightIcon" />
     </li>
@@ -18,6 +18,11 @@ export default {
     return {
       arrowRightIcon
     };
+  },
+  methods: {
+    showRace() {
+      this.$router.push("races/" + this.title);
+    }
   }
 };
 </script>

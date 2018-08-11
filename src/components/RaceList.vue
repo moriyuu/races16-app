@@ -1,8 +1,8 @@
 <template>
       <div class="wrapper">
           <RaceListTitle>{{event.gender}} {{event.distance}}m {{event.style}} {{event.stage}}</RaceListTitle>
-          <ul v-for="race in event.races" :key="race">
-              <RaceListItem>12組 - 13:30</RaceListItem>
+          <ul>
+              <RaceListItem v-for="race in event.races" :key="race">12組 - 13:30</RaceListItem>
           </ul>
       </div>
 </template>

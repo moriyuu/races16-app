@@ -2,12 +2,6 @@
   <div class="wrapper">
     <VHeader />
     <div class="container">
-      <ul>
-        <li>
-          <router-link to="/">Home</router-link>
-          <router-link to="/about">About</router-link>
-        </li>
-      </ul>
       <slot></slot>
     </div>
   </div>
@@ -23,7 +17,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
 .wrapper {
