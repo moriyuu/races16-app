@@ -2,7 +2,7 @@
   <main-layout>
     <div class="container" >
       <h1>レース一覧</h1>
-      <RaceList v-for="event in events" :key="event.id" :event="event" />
+      <RaceList v-for="event in events" :key="event.gender + event.distance + event.style + event.stage" :event="event" />
     </div>
     <router-view></router-view>
   </main-layout>
@@ -11,40 +11,24 @@
 <script>
 import MainLayout from "../layouts/Main.vue";
 import RaceList from "../components/RaceList.vue";
+import { database } from "../firebase";
 
 export default {
   components: {
     MainLayout,
     RaceList
   },
+  created() {
+    database
+      .ref("events")
+      .once("value")
+      .then(events => {
+        this.events = events.val();
+      });
+  },
   data() {
     return {
-      events: [
-        {
-          id: 1,
-          style: "平泳ぎ",
-          distance: 100,
-          stage: "予選",
-          gender: "男子",
-          races: [1, 2, 3, 4, 5]
-        },
-        {
-          id: 2,
-          style: "バタフライ",
-          distance: 100,
-          stage: "予選",
-          gender: "女子",
-          races: [1, 2, 3]
-        },
-        {
-          id: 3,
-          style: "個人メドレー",
-          distance: 400,
-          stage: "タイム決勝",
-          gender: "女子",
-          races: [1, 2, 3, 4, 5, 6, 7]
-        }
-      ]
+      events: []
     };
   }
 };

@@ -1,0 +1,68 @@
+{
+  "events": [
+    {
+      "gender": "男子",
+      "distance": 100,
+      "style": "平泳ぎ",
+      "stage": "予選",
+      "races": [
+        {
+          "id": 1,
+          "startTime": "12:34"
+        },
+        {
+          "id": 2,
+          "startTime": "12:37"
+        },
+        {
+          "id": 3,
+          "startTime": "12:40"
+        },
+        {
+          "id": 4,
+          "startTime": "12:43"
+        },
+        {
+          "id": 5,
+          "startTime": "12:46"
+        }
+      ]
+    },
+    {
+      "gender": "女子",
+      "distance": 200,
+      "style": "平泳ぎ",
+      "stage": "予選",
+      "races": [
+        {
+          "id": 1,
+          "startTime": "12:34"
+        },
+        {
+          "id": 2,
+          "startTime": "12:37"
+        },
+        {
+          "id": 3,
+          "startTime": "12:40"
+        },
+        {
+          "id": 4,
+          "startTime": "12:43"
+        },
+        {
+          "id": 5,
+          "startTime": "12:46"
+        },
+        {
+          "id": 6,
+          "startTime": "12:43"
+        },
+        {
+          "id": 7,
+          "startTime": "12:46"
+        }
+      ]
+    }
+  ]
+}
