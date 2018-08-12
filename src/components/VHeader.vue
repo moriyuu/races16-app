@@ -71,6 +71,7 @@ export default {
 }
 
 .nav {
+  position: fixed;
   background-color: #18b5df;
 
   .logo {

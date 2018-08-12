@@ -1,6 +1,6 @@
 <template>
 <div class="wrapper">
-    <section class="modal" v-click-outside="onClickOutside">
+    <section class="modal" v-click-outside.notouch="onClickOutside">
         <h2 class="eventName">男子 100m 平泳ぎ 予選</h2>
         <h1 class="groupNum">15組</h1>
         <div class="scheduledTime">
